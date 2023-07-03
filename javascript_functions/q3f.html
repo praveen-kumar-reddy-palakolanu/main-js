@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q3.JSFUNCTIONS</title>
+    </head>
+    <script>
+        var str=prompt();
+        function findcombination(str){
+            var a=[];
+            for(var i=0;i<str.length;i++){
+                for(var j=i+1;j<str.length+1;j++){
+                    a.push(str.slice(i,j));
+                }
+            }
+            return a;
+        }
+        document.write(findcombination("str"));
+    </script>
+</html>

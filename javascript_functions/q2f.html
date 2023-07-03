@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Q2.JSFUNCTION</title>
+    </head>
+    <script>
+        var str=prompt("Enter a word:")
+        function findpalindrome(str){
+            var slen=str.length;
+            for(var i=0;i<slen/2;i++){
+                if(str[i]!=str[slen-1-i]) {
+                    return "Not Palindrome";
+                }
+            }
+            return "Palindrome";
+        }
+        document.write(findpalindrome(str));
+    </script>
+    <body>
+    </body>
+</html>

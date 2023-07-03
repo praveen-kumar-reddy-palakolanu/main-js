@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html>
+    <head>
+        <title>Q9.JavaScriptLOOPS</title>
+    </head>
+    <script>
+        function find(n){
+            while(n!=0){
+            var rem,rev=0;
+            rem=n%10;
+            rev=rev+(rem*rem*rem);
+            n=Math.floor(n/10);
+            }
+        }
+        
+    </script>
+    <br>
+
+    <br>
+</html> -->
+
+<!doctype html>
+<html>
+    <head>
+        <title>Q9.JSLOOPS</title>
+    <script>
+    function find(){
+    var arm=0,a,num;
+    num=Number(document.getElementById("demo").value);
+    temp=num;
+    while(temp>0){
+        a=temp%10;
+        temp=parseInt(temp/10);
+        arm=arm+a*a*a;
+    }
+    if(arm==num){
+        alert("Armstrong number");
+    }
+    else{
+        alert("Not Armstrong number");
+    }
+}
+    </script>
+    </head>
+    <body>
+    Enter any Number: <input id="demo">
+    <button onclick="find()">Click</button></br></br>
+    </body>
+</html>
